@@ -30,6 +30,8 @@
     <meta name="msapplication-config" content="./img/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
+    <script defer src="./main.js"></script>
+
     <title>Bola de Cristal</title>
   </head>
   <body>
@@ -47,11 +49,15 @@
           <input
             class="question"
             type="text"
-            name=""
-            id=""
-            placeholder="Digite sua pergunta"
+            name="question"
+            id="question"
+            placeholder="Digite sua pergunta aqui"
+            aria-placeholder="faça uma pergunta"
           />
-          <button class="ask-button">Fazer Pergunta</button>
+          <button id="ask" class="ask-button" type="button">
+            Fazer Pergunta
+          </button>
+          <h3 id="answer"></h3>
         </div>
       </div>
     </div>
